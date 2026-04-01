@@ -1,0 +1,60 @@
+CivicConnect — Nepali Hard Test Report
+Model: distilbert-base-multilingual-cased
+Hard Test Accuracy       : 0.7500
+Hard Test F1 (weighted)  : 0.7529
+
+              precision    recall  f1-score   support
+
+ electricity     1.0000    0.9000    0.9474        10
+       water     0.6154    0.8000    0.6957        10
+        road     0.6667    0.6000    0.6316        10
+     garbage     0.7778    0.7000    0.7368        10
+
+    accuracy                         0.7500        40
+   macro avg     0.7650    0.7500    0.7529        40
+weighted avg     0.7650    0.7500    0.7529        40
+
+
+Per-sample predictions:
+Text                                                          True          Predicted       Conf
+----------------------------------------------------------------------------------------------------
+पानी तान्ने मोटर चलाउन बिजुली छैन।                            electricity   electricity    1.000
+राति उज्यालो नभएर हिड्न डर लाग्छ।                             electricity   electricity    0.996
+आज बत्ती आएन।                                                 electricity   electricity    1.000
+मेरो घरमा लाइन छैन।                                           electricity   electricity    1.000
+ट्रान्सफर्मर खराब छ।                                          electricity   electricity    1.000
+हाम्रो टोलमा अँध्यारो छ।                                      electricity   electricity    1.000
+मिटर बिग्रिएको छ।                                             electricity   electricity    0.998
+स्ट्रीट लाइट बलेको छैन।                                       electricity   electricity    1.000
+तार झुण्डिएको छ।                                              electricity   electricity    1.000
+बिजुली छैन पानी पनि छैन।                                      electricity   water          1.000  <-- WRONG
+धारामा पानी छैन।                                              water         water          1.000
+बाटोमा पाइप फुटेको छ।                                         water         water          1.000
+सडकमा पानी जम्दा हिड्न गाह्रो छ।                              water         road           1.000  <-- WRONG
+पानी कालो र दुर्गन्धित आउँछ।                                  water         water          1.000
+पानी छैन।                                                     water         water          1.000
+आपूर्ति बन्द छ।                                               water         water          0.999
+लिकेज भएको छ।                                                 water         road           0.996  <-- WRONG
+धारो सुक्यो।                                                  water         water          0.995
+पानी ट्यांकी खाली छ।                                          water         water          1.000
+पाइपलाइन फुटेर बाटोमा पानी भरिएको छ।                          water         water          1.000
+सडक खाल्डाखुल्डी भरिएको छ।                                    road          road           1.000
+फोहोरले बाटो थुनिएको छ।                                       road          garbage        1.000  <-- WRONG
+खाल्डोमा पानी जमेर दुर्घटना भएको छ।                           road          water          0.994  <-- WRONG
+सडक छैन।                                                      road          road           1.000
+बाटो बनेको छैन।                                               road          water          0.781  <-- WRONG
+पुल टुटेको छ।                                                 road          road           1.000
+सडकमा ढुंगाफोहोर छ।                                           road          garbage        1.000  <-- WRONG
+निर्माण सामग्रीले बाटो छेकिएको छ।                             road          road           1.000
+सडक अवरुद्ध छ।                                                road          road           1.000
+बाटो जाम छ।                                                   road          road           0.980
+फोहोर उठाइएन।                                                 garbage       garbage        1.000
+दुर्गन्ध आउँछ।                                                garbage       garbage        1.000
+बाटोमा कचरा छ।                                                garbage       garbage        1.000
+फोहोर जलाइएको छ।                                              garbage       garbage        1.000
+सफाइ भएको छैन।                                                garbage       water          0.877  <-- WRONG
+कचरा संकलन हुँदैन।                                            garbage       garbage        0.999
+गल्लीमा फोहोर थुप्रिएको छ।                                    garbage       garbage        1.000
+ड्रेन भरिएको छ।                                               garbage       road           0.999  <-- WRONG
+हाम्रो क्षेत्रमा सफाइ कार्यक्रम छैन।                          garbage       water          1.000  <-- WRONG
+थुपार्न थालेको छ।                                             garbage       garbage        0.997
