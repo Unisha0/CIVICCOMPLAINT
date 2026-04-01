@@ -2,9 +2,10 @@
 
 > A multilingual AI-powered civic complaint management system that automatically categorizes citizen complaints in **English and Nepali** using fine-tuned DistilBERT models.
 
-![Research Poster](assets/poster.png)
+![Research Poster](assets/posterr.png)
 
 POSTER OF CIVIC COMPLAINT CLASSIFICATION SYSTEM USING DISTILBERT
+---
 
 ## Overview
 
