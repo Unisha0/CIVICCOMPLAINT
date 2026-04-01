@@ -1,0 +1,41 @@
+# OS and editor
+.DS_Store
+.vscode/
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/venv/
+
+# Secrets and local env
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.crt
+
+# Local databases and artifacts
+**/*.sqlite3
+**/db.sqlite3
+*.zip
+civiccomplaints.zip
+
+# Build/generated outputs
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/replay_pid*.log
+
+# Large binaries and model artifacts
+**/*.safetensors
+**/*.mp4
+**/*.exe
+
+# Local docs/media dump folder
+files/
+
+# Preserve nested git histories locally, but never push them
+.git-nested-backups/
