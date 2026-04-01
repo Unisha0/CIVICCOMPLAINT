@@ -2,13 +2,9 @@
 
 > A multilingual AI-powered civic complaint management system that automatically categorizes citizen complaints in **English and Nepali** using fine-tuned DistilBERT models.
 
-![Research Poster]
+![Research Poster](assets/poster.png)
 
-*Published in Journal of Himalaya College of Engineering, Vol. X, Issue X — March 2026*  
-*Authors: Ashmita Thapa, Jeevika Subedi, Nayana Bhatta, Unisha Chaulagain, Er. Nawaraj Singh Thakuri*  
-*Department of Electronics and Computer Engineering, Himalaya College of Engineering, Tribhuvan University (TU), Lalitpur, Nepal*
-
----
+POSTER OF CIVIC COMPLAINT CLASSIFICATION SYSTEM USING DISTILBERT
 
 ## Overview
 
